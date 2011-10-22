@@ -1,0 +1,17 @@
+Pancake
+=======
+
+Thank you for purchasing Pancake.
+
+Installation
+------------
+
+1.  Upload the pancake directory somewhere publicly accessible on your web server.  You may rename it to anything you like.
+2.  You may rename example.htaccess to .htaccess to remove the index.php from your URLs if your server supports mod_rewrite.
+3.  Visit the url where you have uploaded Pancake too (i.e. http://example.com/billing).
+
+You will be greeted by an installation wizard.  Simply follow the instructions on the screen.
+
+When complete you MUST remove or rename the installer directory in order to login.
+
+Have fun!

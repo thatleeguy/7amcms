@@ -1,0 +1,1 @@
+<?php include FCPATH.'system/pancake/config/config.php';

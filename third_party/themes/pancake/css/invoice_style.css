@@ -1,0 +1,348 @@
+/*
+   style.css
+   Pancake Invoice Template
+
+	This template was design to be easily modifiable and simple to build new Pancake Payment Invoice templates from.
+
+   Created by Lee Tengum on 2010-04-04.
+   Copyright 2010 Pancake Payments (http://pancakeapp.com). All rights reserved.
+   
+*/
+
+
+body {
+	background: #fff;
+	padding:0;
+	margin:0;
+	font-size:14px;
+	font-family:helvetica;
+	color:#545454;
+}
+
+/* ============= */
+/* = Structure = */
+/* ============= */
+
+#buttonBar {
+	height:55px;
+	width:100%;
+	display:block;
+	text-align:right;
+  	position:fixed;
+        z-index: 4;
+	top:0;
+	left:0;
+	background:#142C35;
+	color: #515151;
+	font-family: Arial;
+	font-size: 15px;
+	line-height: 21px;
+}
+
+#buttonHolders {
+	width:835px;
+	margin:0 auto;
+}
+
+.orangered, ul li a  {
+	color: #005ea6;
+}
+
+.green, h2, h3, h4 {
+	color:#005ea6;
+	font-weight:normal;
+}
+
+.red, h1 {
+	color:#005ea6;
+	font-weight:normal;
+}
+
+h4 {
+	margin:0 0 5px 0;
+}
+
+p {
+	margin:0 0 10px 0;
+	line-height:18px;
+}
+
+
+#buttonBar a {
+	float:right;
+	margin:10px 0px 0 10px;
+	padding:5px 10px;
+	border:1px solid #ccc;
+	background:#D0DFEB;
+	color:#555;
+	text-decoration:none;
+	
+}
+
+#wrapper {
+	width:695px;
+	margin:0 auto;
+	font-size:14px;
+	clear:both;
+	padding:60px 0px;
+}
+
+.pdf_mode #wrapper {
+	margin:0;
+	width:700px!important;
+	overflow:none;
+	padding:0;
+}
+
+#envelope {
+	float:left;
+	
+}
+/* Company Details Box */
+
+#mailto {
+	width:300px;
+	float:left;
+}
+
+#companyInfo {
+	width:290px;
+	padding:20px 0px 60px 0px;
+	text-align:right;
+	color:#999;
+	float:left;
+}
+
+#companyInfo h1 {
+	font-size:18px;
+	color:#142C35;
+}
+
+#clientInfo {
+	clear:both;
+}
+
+/* Client Details Box */
+
+#clientInfo {
+	padding:20px 0px 30px 0px;
+
+}
+
+#clientInfo h2 {
+	font-size:1.8em;
+	margin:0 0 30px 0;
+}
+
+#clientInfo table {
+	background-color: #f4f7f9;
+	border-top: 1px solid #9fbbd0;
+	border-bottom: 1px solid #9fbbd0;
+	padding: 20px;
+}
+
+#clientInfo p {
+	color:#4a4a4a;
+}
+
+p#work_desc {
+	margin:30px 0 0 0;
+	color:#939393;
+	font-size:14px;
+	text-indent:10px;
+}
+
+#clientInfo span {
+	float:right;
+	clear:right;
+	width:170px;
+	text-align:left;
+}
+
+/* ======================== */
+/* = Invoice Table & Rows = */
+/* ======================== */
+
+#content {
+	clear:both;
+}
+#content table {
+	margin:0 0 30px 0;
+	width:695px;
+	font-size:12px;
+	line-height:14px;
+}
+
+.pdf_mode #content table {
+	width:600px!important;
+	
+}
+
+#content table thead {
+	/* background:#f2f2f2; Known bug in DOMPDF, add when its fixed or whatever */
+	height:35px;
+	color:#333;
+
+}
+
+#content table thead th {
+	border-bottom: 1px solid #9fbbd0;
+	color: #005ea6;
+}
+
+#content table th,
+#content table td {
+	padding:10px;
+}
+
+#content table td {
+	padding:10px;
+}
+#content tbody tr.alt td {
+	background-color: #f3f6f9;
+}
+
+#content tr td.column_1 {
+	width:307px;
+	font-size:12px;
+}
+
+td.column_2, td.column_3{
+	width:50px;
+	text-indent:10px;
+}
+
+td.column_4 {
+	width:50px;
+	text-indent:0px;
+	text-align: center;
+}
+
+#content table tfoot tr:first-child td {
+	border-top: 1px solid #9fbbd0;
+}
+
+#content .invoice-description {
+	vertical-align: top;
+	font-size: 14px;
+}
+
+#content .amount, #content .dueon, #wrapper a {
+	color: #005ea6;
+}
+#content .payment-plan a {color: #0a7f20;}
+
+#content .file-to-download {background-repeat: no-repeat;padding-left: 24px;}
+#files ul {margin:0;list-style:none;padding:0;}
+#files li {display:inline;padding-right: 10px;}
+
+#content .payment-plan {
+	border-top: 1px solid #9fbbd0;
+	border-bottom: 1px solid #9fbbd0;
+}
+
+#content .invoice-description h3 {
+	
+}
+
+#content .total-heading {
+	text-align:right;
+	width: 100px;
+}
+
+#content ul#taxes {
+	padding-left:0;
+	font-size: 12px;
+}
+#content ul#taxes li {
+	list-style:none;
+}
+#content ul#taxes .name {
+	font-weight: bold;
+}
+
+/* ================================ */
+/* = Generic styles and reusables = */
+/* ================================ */
+
+strong {
+	font-weight:bold;
+}
+
+
+/* ================================ */
+/* = Not so simple, but still fun = */
+/* ================================ */
+
+#buttonBar a {
+-webkit-box-shadow: black 0px 1px 0px;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+text-decoration: none;
+
+}
+#buttonBar a:hover {
+	
+    background:#fff; 
+}
+.button:active {
+    border-top-color: #1b435e;
+    background: #1b435e;
+    outline: 0;
+}
+
+
+.timesheet-table {width: 100%;border-spacing: 0;border-left: 1px solid #ccc; font-size:12px!important;}
+.timesheet-table th, .timesheet-table td {padding: 10px; border-right: 1px solid #ccc;border-bottom: 1px solid #ccc;text-align:center;}
+.timesheet-table th {background: #f6f6f6; color: black; border-top: 1px solid #ccc;}
+
+.timesheet_user, .timesheet_date, th.timesheet_task {white-space:nowrap;}
+.timesheet_notes{ text-align:left!important;}
+
+.proposal div.page {border: 1px solid #ccc;margin-bottom:50px;padding: 2em;}
+.proposal h2 {margin-top:0;}
+
+.proposal .editable {cursor: pointer;position:relative;}
+.proposal textarea {cursor: auto;background:none;outline: 2px solid #142C35;height: 1.2em;width:100%; background: transparent; color: inherit !important;border:0;font-size:inherit;font-weight:inherit;font-family:inherit;margin:0;padding:0;}
+.proposal .cover-page {background: #005ea6; color: white;padding: 50px;margin-bottom:50px;}
+.proposal .cover-page h2, .proposal .cover-page p {color:white !important;}
+.proposal .title {width: 250px;}
+.proposal .sidebar > ul {padding-left:2em;}
+.proposal .sidebar:before, .proposal .sidebar:after {content: "";position:absolute; z-index:1; top:0;left:-16px; display:block; background:white; height: 16px; width: 16px;}
+.proposal .sidebar:before {background:#142C35;}
+.proposal .sidebar:after {border-top-right-radius:8px;}
+.proposal .sidebar {position:fixed; top:55px; right:0; background: #142C35; padding: 25px;color:white;border-bottom-left-radius:4px;}
+.proposal .sidebar h2 {color:white;}
+.proposal .sidebar a.close {float:right;padding:0;background:transparent;}
+.proposal #wrapper .section {margin-bottom: 40px;}
+.proposal.not-pdf #wrapper {margin-top: 105px;margin-bottom: 50px;}
+.proposal.admin .sidebar li {cursor: move;}
+.proposal .samplePage, .proposal .sampleSection {display:none;}
+.proposal .sidebar select {margin-bottom: 2em;}
+.proposal #clientInfo span {float:none;}
+.proposal .clientId, .proposal .sidebar .clientEdit, .proposalId {display:none;}
+.proposal .saveProposal {min-width: 100px;text-align:center;}
+.proposal .sidebar ul {padding: 0;list-style: none;}
+.proposal .sidebar li {min-height: 20px;}
+.proposal .sidebar > ul > li > ul {min-height: 37px;}
+.proposal .sidebar > ul > li > ul > li > ul {border: 5px solid black;min-height:37px;}
+.proposal .sidebar > ul > li > ul > .empty {height: 37px;background: red;}
+.proposal .sidebar > ul > li > ul > li > ul > .empty {height: 37px;background: #005ea6;}
+.proposal .sidebar ul ul li {border: 1px solid #ccc;}
+.proposal .sidebar ul ul li > span {background: black;padding:10px;margin:0;display:block;}
+.proposal .addSection, .proposal .addPage, .proposal .sidebar a {background: #005ea6; color: white; display: inline-block; padding: 10px;border-radius: 8px;text-decoration:none;}
+.proposal.not-admin #wrapper .section:last-child {margin-bottom:0;}
+.proposal .sidebar .page > ul {margin: 1em 0;display:block;}
+.proposal .siteAddress {width: 225px;}
+.proposal.pdf .sidebar, .proposal.pdf .addSection, .proposal.pdf .addPage, .proposal.not-admin .addSection, .proposal.not-admin .addPage, .proposal .editing-container {display:none;}
+.proposal.pdf #clientInfo {display:block;}
+.proposal.pdf .cover-page, .proposal.pdf .page {height: 1022px;border:0;page-break-after:always;margin:0;}
+.proposal.pdf .page:last-child {page-break-after: avoid;}
+.proposal .empty-stuffs {color:#ccc;}
+.proposal.pdf .empty-stuffs {display:none;}
+.proposal .editing {cursor: auto;background: #142C35;border-radius: 8px;border-bottom-left-radius:0;border-bottom-right-radius:0;position:absolute;font-size:14px;height:20px;top:-40px;right:0;color:#4A4A4A;padding:10px;}
+.proposal .editing a {text-decoration:none;color: white;}
+
+
+.invoice .paidon {color:white;float:left;margin-left:80px;margin-top:16px;}

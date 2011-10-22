@@ -1,0 +1,251 @@
+### v3.1.13
+
+* [Bug] Fixed several issues with different server configurations.
+
+### v3.1.12
+
+* [Feature] You can now edit the subject line of emails being sent out to clients.
+* [Feature] You can now see when a client last viewed an invoice or an estimate.
+* [Improvement] You can now see when your clients will be notified by email of recurring invoices.
+* [Improvement] Pancake now loads and runs a lot faster.
+* [Improvement] Your logo now shows in reports and timesheets.
+* [Improvement] You can now remove payment parts even when creating invoices.
+* [Bug] Fixed a problem with installing Pancake in certain server configurations.
+* [Bug] Fixed a problem with updating in certain server configurations.
+* [Bug] Fixed a problem with marking invoices as paid in certain server configurations.
+* [Bug] Clicking your logo in the admin panel now takes you back to the Dashboard.
+* [Bug] Fixed a problem with generating PDFs in certain server configurations.
+* [Bug] Fixed a problem with the "Show Reports" button. 
+* [Bug] Fixed a problem with marking invoices as paid on Firefox.
+* [Bug] Fixed a problem with removing invoice line items.
+* [Bug] Fixed a problem with the display of different currency symbols.
+* [Bug] Fixed a bug with the display of time spent on a task.
+* [Bug] The "Paid On" date of an invoice is now the date of the last payment made in an invoice.
+* [Bug] Fixed problem editing payment details of payment parts that didn't exist.
+* [Bug] Fixed problem with pagination in project tasks.
+* [Bug] Fixed various problems with tasks and time entries.
+
+### v3.1.11
+
+* [Bug] Fixed a bug with upgrading in certain server configurations.
+* [Bug] Fixed a problem with the logo getting removed unintentionally.
+* [Bug] Fixed a problem with line items in estimates.
+
+### v3.1.10
+
+This is a critical update. If you are on 3.1.8 or older, you will have to click "Update Now" twice. The first time will not appear to change anything, but the second time will run the update properly and fix everything.
+
+* [Improvement] Added a safety check to make sure updates are downloaded correctly.
+* [Bug] Fixed a problem with upgrading when there's more than two versions between the current version and the latest version.
+* [Improvement] Better hover styles for table rows.
+
+### v3.1.9
+
+* [Bug] Fixed a bug with presaved invoice line items.
+
+### v3.1.8
+
+* [Improvement] Removed duplicated company name in detailed invoices.
+* [Bug] Alert box on Projects page is now removed.
+* [Bug] Fixed an issue with the update system that prevented 3.1.7 from updating properly.
+
+### v3.1.7
+ 
+* [Feature] Invoice items now have a Name as well as a Description.
+* [Feature] Items can now be predefined and values will be added to an invoice item via an autocomplete.
+* [Improvement] Invoices now display whether they're paid or not more clearly.
+* [Improvement] Invoice payment dates are now displayed when viewing lists of your invoices.
+* [Improvement] Added logo to almost all client-facing pages, including invoices.
+* [Bug] Fixed a bug with some email variables.
+* [Bug] Fixed a bug with the tax registration numbers.
+* [Bug] Fixed a bug with creating projects from the client's page.
+* [Bug] Fixed several minor bugs.
+
+### v3.1.6
+
+NOTE: If you modified system/pancake/config/email.php, 3.1.6 will warn you that it will overwrite it. To prepare for this, we have already transferred the details in your email config file to your database in Pancake 3.1.5, and you will not lose any information.
+
+* [Feature] Added Tax References / Codes so you can track things like VAT Registration numbers in the UK, or any local tax.
+* [Feature] You can now set your email server settings from Pancake (use Google Apps, Gmail, SMTP, sendmail or PHP mail).
+* [Improvement] If you're logged into the admin panel, Pancake will now redirect you to the admin panel whenever you access the main index (not /admin). 
+* [Improvement] When accepting a proposal, estimates attached to it are automatically converted to invoices. If, after a proposal has been accepted, you mark it as rejected or unanswered, the invoices will go back to being just estimates.
+* [Improvement] Added links to Projects in the Upcoming Tasks box.
+* [Improvement] Pancake will now notify you when it cannot access the Internet, and it won't stop you from accessing it.
+* [Bug] Fixed a problem with displaying long timezone names when selecting a timezone.
+* [Bug] Fixed issue with marking payments as paid manually and setting payment dates.
+* [Bug] Fixed a problem with marking invoices as paid, when they're paid via a gateway.
+* [Bug] Fixed a problem with invoice URLs in "Payment Received" emails.
+* [Bug] Fixed a problem with the "Payment Details" button being cut off on Windows-based browsers.
+* [Bug] Fixed a problem with manually upgrading from 3.0.x to 3.1.x.
+* [Bug] Fixed misleading label when creating a new proposal.
+* [Bug] Fixed bug with auto-incrementing proposal numbers.
+* [Bug] Fixed a problem with negative numbers in invoice line items.
+* [Bug] Fixed a bug with the datepicker when there's more than one partial payment.
+* [Bug] Fixed a bug with setting due dates in partial payments.
+* [Bug] Fixed a bug with viewing simple invoices with multiple partial payments.
+* [Bug] Fixed a bug with sorting page sections in proposals.
+
+### v3.1.5
+
+* [Bug] Fixed an issue with Pancake in FastCGI.
+* [Bug] Fixed a minor issue with the update system.
+* [Bug] Fixed an issue with sending emails.
+* [Bug] Fixed an issue with the BCC setting.
+
+### v3.1.4
+
+* [Bug] Fixed bug with completing the update process in auto updates.
+* [Improvement] Changed the way BCC emails are sent, in order to make it easier to distinguish them from regular emails.
+
+### v3.1.31
+
+* [Bug] Fixed an issue with automatically incrementing invoice numbers.
+* [Feature] Added a setting for Pancake to BCC the notify_email whenever an email is sent to a client.
+
+### v3.1.3
+
+* [Bug] Fixed a bug with manual updates (NOTE: Manual updates are highly unrecommended; you should let Pancake update things for you).
+* [Bug] Fixed a bug with viewing estimates.
+
+### v3.1.2
+
+* [Bug] Fixed a problem with the update system when PHP did not have ZipArchive installed.
+
+### v3.1.1
+
+* [Bug] Fixed a small bug in the update process.
+
+### v3.1.0
+
+Pancake 3.1 marks the end of manual upgrades. In Pancake 3.1, you are notified automatically when new versions become available, and you can update your Pancake automatically in one click. No configuration required. It couldn't be simpler. It's like using a hosted solution (instant updates without you having to do anything), but without the monthly fees!
+
+* [Feature] Pancake Update System
+* [Feature] You can now delete logged time entries from project tasks.
+* [Feature] You can now set transaction fees associated with a payment. With PayPal payments, the transaction fee is set automatically.
+* [Feature] When viewing a client's details, you can now create invoices for that client.
+* [Feature] You can now delete your uploaded logo.
+* [Feature] Pancake now has a brilliant CSS syntax highlighter to help you edit your custom CSS.
+* [Bug] Fixed problems with frontend CSS not showing up on some pages.
+* [Bug] Fixed problems with paid invoices showing as unpaid on the "Paid Invoices" page.
+* [Bug] Fixed bug with toggling the completion status of tasks.
+* [Bug] Fixed problem with uploads on Pancakes without .htaccess.
+* [Bug] Fixed problem with .htaccess files on PHP under CGI mode.
+* [Bug] Fixed problem with disabled payment gateways showing up as payment methods.
+* [Bug] Fixed problem with lack of validation for time entries.
+* [Bug] Fixed problem with datepicker not showing up in Payment Date, in Payment Details.
+* [Bug] An auto-incremented invoice number now appears by default when creating invoices.
+* [Bug] Fixed problems with Qty/Hrs and Rate fields in invoices forcing you back to the end of the input when you use navigation keys.
+* [Bug] Fixed problems with pagination in some pages.
+
+### v3.0.2
+
+* [Feature] Support for Authorize.net as a payment method
+* [Bug] Fixed problem with trying to add a new client while creating a proposal.
+* [Bug] Fixed problems sending proposal emails to clients.
+* [Bug] Improved the email configurations to guide people trying to configure SMTP emails.
+* [Bug] Fixed wording problems in “delete estimate” page.
+* [Bug] Fixed problem with AUD currency.
+* [Bug] Fixed bug with toggling the completion status of tasks.
+
+### v3.0.0
+
+* [Feature] Proposals
+* [Feature] Improved Time Tracking
+* [Feature] Reports
+* [Feature] RESTful API
+* [Feature] Partial payments can be set up with different amounts, percentages and due dates.
+* [Feature] Improved design for installer
+* [Feature] “Client Health” shows how well the client keeps up with invoices
+* [Feature] Admins can upload custom logos
+* [Feature] Admins can edit CSS for both the admin panel and frontend from the CP
+* [Feature] Switched to “auto-upgrades” for the database, just replace files to update
+* [Feature] Themes can now have mobile versions by making just a few small changes
+* [Feature] Timesheets show your time spent, multiple users will show with their usernames
+* [Feature] “Copy to Clipboard” added to Invoice confirmation page
+
+### v2.1.0
+
+* [Feature] Added multi-currency support.
+* [Bug] Recurring invoices stay marked as recurring.
+
+### v2.0.2
+
+* [Feature] Added "Time Interval" feature. 
+* [Bug] Tasks can now be reset to 0 hours. 
+* [Bug] Always include javascript controller, even if not using mod_rewrite. 
+* [Bug] Fixed clients dropdown for projects. 
+* [Bug] Stop tasks erroring if there are none. 
+* [Bug] Turned off CSRF protection, it was breaking PayPal. 
+* [Bug] Client dropdowns will now order alphabetically. 
+* [Bug] Removed CSS file import() as it doesnt exist. 
+* [Bug] Removed a few UNIX EPOC issues and stopped Simple Invoice viewing always showing $. 
+* [Bug] Switched installer to use file_get_contents() over curl for better portability on license checking. 
+* [Bug] Hide notes and details if none provided. 
+
+### v2.0.1 
+
+* [feature] Currencies can now be selected via dropdown on the settings page and currencies are populated via a config file. 
+* [Bug] Fixed invoice type in upgrade. 
+* [Bug] Will now show the users name, not the installed admin name. 
+* [Bug] Removed extra confirmation level to project deletion. 
+* [Bug] Making delete form look nicer 
+* [Bug] Delete Project will now redirect properly if installed in a sub-directory. 
+* [Bug] Editing user passwords now works. 
+* [Bug] Fixed Forgot Password link 
+* [Bug] No longer uses alert() to spit out HTML validation messages, uses red notification box instead. 
+* [Bug] Fixed IE7 issue. 
+* [Bug] Estimates with no Due Date will no longer list as 01/01/1970 and Invoice due dates are no longer required. 
+
+### v2.0
+
+* A ton of bug fixes (too many to list)
+* New admin UI
+* Project Management, Tasks, Time Tracking
+* Recurring Invoices (requires simple cron job)
+
+### v1.1.4
+
+* Added Estimates.
+* Changed password fields in the installer to actual password inputs.
+* Fixed an issue which limited the username to 15 characters.
+* Fixed an issue where USD was always shown as the rate.
+* Fixed an issue when you marked an invoice as paid it had no payment date set.
+* Fixed an issue where quantities were forced to be integers.
+* You can now enter negative rates on detailed invoices.
+* Fixed some spelling errors and differences between wording for due and overdue invoices.
+* Added the South Africa, Rand currency.
+* You can now leave the invoice number blank on a new invoice to have one auto-generated.
+
+### v1.1.3
+
+* Fixes an issue preventing deletion of clients.
+* Fixes an issue on the Paypal redirection form.
+
+### v1.1.2
+
+* New JS 'Pancake' object.
+* The invoice Description and Notes now have WYSIWYG editors.
+* Modified the routes.php file to easier add/remove routes
+* Fixed an erroneous date on the Simple invoice view.
+* Fixed issue with the assets library causing an issue when creating a PDF.
+* Fixed a small bug that caused the first_name to be entered in the company field on Client edit.
+
+### v1.1.1
+
+* Added ability to see all invoices by simply clicking on the "Invoices" tab.
+* Fixed a small bug that was causing the taxes to always default to the "Default" tax.
+* Fixed a bug that caused a folder to get created in "uploads" even if no files were being uploaded.
+* Fixed an issue when entering amounts with comma's in.
+* Fixed bug where invoices were incorrectly showing as Unpaid on the "Past 30 Days" list.
+
+### v1.1
+
+* Renamed the "payments" table to "invoices".
+* Some Schema changes to invoices.
+* Added ability for Unlimited Tax Rates.
+* Added RSS Feeds for Paid, Unpaid and Overdue invoices.
+* Renamed "Payment Request" to "Simple Invoice" to clear up confusion.
+* Re-arranged the Create Invoice page to be more clear and easier to use.
+* Small UI changes
+* Installer now checks for PHP version and that Curl is installed, which are both requirements.
+* Some small issues were fixed by moving to the Unlimited Tax rates.

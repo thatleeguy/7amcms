@@ -1,0 +1,8 @@
+Upgrade
+=======
+
+1. Backup your system/pancake/config/database.php config file.
+2. Backup your uploads directory (just in-case).
+3. Upload the index.php, and the system and third_party folders...overwriting the existing ones.
+4. Place your backed up database config file back.
+5. That's it! Enjoy your updated Pancake.

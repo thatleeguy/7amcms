@@ -1,0 +1,68 @@
+/*
+	pancake_bar_style.css
+   Pancake Header Bar theme
+
+	This stylesheet loads the base values and theme for the headerbar, if you wish to change any values, duplicate this one and use 
+	@import to load your new stylesheet as this one maybe be updated in the future. 
+	
+	Edit at your own risk! We dont want to see you lose your work :D
+
+   Created by Lee Tengum on 2011-06-27.
+   Copyright 2011 Pancake Payments (http://pancakeapp.com). All rights reserved.
+*/
+
+
+
+#buttonBar {
+	height:55px;
+	width:100%;
+	display:block;
+	text-align:right;
+  	position:fixed;
+        z-index: 4;
+	top:0;
+	left:0;
+	background:#142C35;
+	color: #515151;
+	font-family: Arial;
+	font-size: 15px;
+	line-height: 21px;
+}
+
+#buttonBar a {
+	float:right;
+	margin:10px 0px 0 10px;
+	padding:5px 10px;
+	border:1px solid #ccc;
+	background:#D0DFEB;
+	color:#555;
+	text-decoration:none;
+	
+}
+
+
+
+#buttonHolders {
+	width:935px;
+	margin:0 auto;
+}
+
+#buttonBar a {
+-webkit-box-shadow: black 0px 1px 0px;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+text-decoration: none;
+
+}
+#buttonBar a:hover {
+	
+    background:#fff; 
+}
+
+.button:active {
+    border-top-color: #1b435e;
+    background: #1b435e;
+    outline: 0;
+}
+
