@@ -1,7 +1,7 @@
 <?php
 
-# Having Pancake version as 2.1.0 is NOT a mistake, it is here for backward-compatibility.
-define('PANCAKE_VERSION', '2.1.0');
+
+define('7AMCMS_VERSION', '0.1');
 
 /*
  *---------------------------------------------------------------
@@ -75,7 +75,7 @@ define('PANCAKE_VERSION', '2.1.0');
  *
  */
 
-$application_folder = "./system/pancake";
+$application_folder = "./system/7amcms";
 
 // No database? Send to installer so we can make one 
 
